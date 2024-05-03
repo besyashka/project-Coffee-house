@@ -7,6 +7,9 @@
   height: 644px;
   object-fit: cover;
   border-radius: 40px;
+  @include media-mobile {
+    max-height: 552px;
+  }
 }
 
 .enjoy_content {
@@ -14,6 +17,18 @@
   top: 100px;
   left: 140px;
   max-width: 530px;
+  @include media-tablet {
+    left: 13%;
+  }
+  @include media-breakpoint {
+    top: 60px;
+    width: 80%;
+  }
+  @include media-mobile {
+    top: 60px;
+    left: 33px;
+    max-width: 320px;
+  }
 }
 
 .enjoy_text {

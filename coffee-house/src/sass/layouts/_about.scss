@@ -3,6 +3,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 590px 430px;
   gap: 40px;
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 590px);
+  }
 }
 
 .about_box_img {
@@ -23,9 +27,15 @@
 
 .narrow_img {
   height: 430px;
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .wide_img {
   height: 590px;
   align-self: end;
+  @include media-tablet {
+    align-self: auto;
+  }
 }

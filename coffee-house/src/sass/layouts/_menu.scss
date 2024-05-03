@@ -1,9 +1,11 @@
 .menu_title {
   max-width: 800px;
   margin: 0 auto 40px;
-  font-size: 60px;
-  line-height: 75px;
+  @include font(60px, 75px);
   text-align: center;
+  @include media-mobile {
+    @include font(32px, 40px);
+  }
 }
 
 .menu_tabs {
@@ -12,13 +14,19 @@
 
 .menu_list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 309px);
+  justify-content: center;
   gap: 40px;
 }
 
 .menu_item {
   border: 1px solid $color-border-light;
   border-radius: 40px;
+  &_hidden {
+    @include media-tablet {
+      display:none;
+    }
+  }
 }
 
 .item_img {
@@ -47,4 +55,20 @@
 
 .menu_item_price {
   margin-top: auto;
+}
+
+.button-refresh {
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin: 40px 46%;
+  background: $color-background-body;
+  border: 1px solid $color-border-dark;
+  border-radius: 100%;
+  @include media-tablet {
+    display: block;
+  }
+  @include media-mobile {
+    margin: 40px 41%;
+  }
 }

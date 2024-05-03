@@ -15,14 +15,22 @@ body {
   color: $color-text-dark;
 }
 
-
 h1 {
   @include font(72px, 75.6px);
+  @include media-breakpoint {
+    @include font(52px, 48.3px)
+  }
+  @include media-mobile {
+    @include font(42px, 48.3px)
+  }
 }
 
 h2 {
   padding-bottom: 40px;
   @include font(60px, 75px);
+  @include media-mobile {
+    @include font(32px, 40px)
+  }
 }
 
 h3 {

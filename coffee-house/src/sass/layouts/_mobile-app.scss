@@ -2,10 +2,17 @@
   display: flex;
   align-items: center;
   gap: 100px;
+  @media screen and (max-width: 1230px) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 
 .mobile_app_content {
   max-width: 630px;
+  @include media-mobile {
+    max-width: 348px;
+  }
 }
 
 .mobile_app_text {
@@ -14,7 +21,14 @@
 
 .mobile_app_buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+}
+
+.mobile_app_img {
+  @include media-tablet {
+    width: 100%;
+  }
 }
 
 .mobile_app_button {

@@ -1,13 +1,24 @@
 .footer_container {
   display: flex;
+  justify-content: space-between;
   padding: 100px;
-  gap: 100px;
   background: $color-border-dark;
   border-radius: 40px;
+  @include media-laptop {
+    flex-wrap: wrap;
+    padding: 100px 60px;
+  }
+  @include media-mobile {
+    padding: 63px 16px;
+    gap: 37px;
+  }
 }
 
 .footer_title {
-  width: 530px;
+  max-width: 530px;
+  @include media-tablet {
+    width: 100%;
+  }
 }
 
 .footer_socials {
@@ -41,6 +52,9 @@
   flex-direction: column;
   gap: 36px;
   padding-top: 36px;
+  @include media-tablet {
+    padding-top: 5px;
+  }
 }
 
 .footer_list {
