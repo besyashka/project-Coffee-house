@@ -689,6 +689,18 @@ h3 {
   background: #E1D4C9;
   transition: 0.5s ease-out;
 }
+.tab_button_active {
+  color: #E1D4C9;
+  background: #665F55;
+  border: 1px solid #E1D4C9;
+}
+.tab_button_active:hover {
+  cursor: default;
+}
+.tab_button_active > .tab_button_icon {
+  background: #E1D4C9;
+  transition: 0.5s ease-out;
+}
 
 .tab_button_icon {
   display: flex;

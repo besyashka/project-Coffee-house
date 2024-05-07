@@ -28,6 +28,19 @@
       transition: 0.5s ease-out;
     }
   }
+
+  &_active {
+    color: $color-background-body;
+    background: $color-border-dark;
+    border: 1px solid $color-background-body;
+    &:hover {
+      cursor: default;
+    }
+    & > .tab_button_icon {
+      background: $color-background-body;
+      transition: 0.5s ease-out;
+    }
+  }
 }
 
 .tab_button_icon {
