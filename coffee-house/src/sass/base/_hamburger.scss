@@ -3,9 +3,10 @@
   display: inline-block;
   position: absolute;
   width: 18px;
-  height: 2px;
-  background: $color-text-dark;
+  height: 1.5px;
+  background: $color-border-dark;
   border-radius: 1.5px;
+  transition: 0.5s;
 }
 
 .hamburger {
@@ -20,12 +21,22 @@
   }
   &::before {
     @extend %hamburger-line;
-    top: 16px;
+    top: 24px;
     left: 12px;
   }
   &::after {
     @extend %hamburger-line;
-    bottom: 16px;
+    top: 16px;
     left: 12px;
+  }
+}
+
+.hamburger_active{
+  &::before {
+    transform: translate(0px, -4px) rotate(-45deg);
+  }
+  
+  &::after {
+    transform: translate(0px, 4px) rotate(45deg);
   }
 }
