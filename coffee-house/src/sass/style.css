@@ -384,8 +384,17 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 482px;
+  max-width: 480px;
   overflow: hidden;
+}
+
+.slider_line {
+  display: flex;
+  max-width: 1440px;
+  height: 640px;
+  transition: all ease 1s;
+  position: relative;
+  left: 0;
 }
 
 .slide {
@@ -411,6 +420,10 @@ h3 {
   height: 4px;
   background: #C1B6AD;
   border-radius: 100px;
+}
+.pagination_active {
+  background: #665F55;
+  transition: 0.5s ease-out;
 }
 
 .mobile_app_container {

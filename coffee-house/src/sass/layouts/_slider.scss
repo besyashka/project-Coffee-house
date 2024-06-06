@@ -36,8 +36,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 482px;
+  max-width: 480px;
   overflow: hidden;
+}
+
+.slider_line {
+  display: flex;
+  max-width: 1440px;
+  height: 640px;
+  transition: all ease 1s;
+
+  position: relative;
+  left: 0;
 }
 
 .slide {
@@ -61,4 +71,8 @@
   height: 4px;
   background: $color-border-light;
   border-radius: 100px;
+  &_active {
+    background: $color-border-dark;
+    transition: 0.5s ease-out;
+  }
 }
