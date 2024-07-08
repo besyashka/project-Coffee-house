@@ -1,0 +1,57 @@
+.enjoy_container {
+  position: relative;
+}
+
+.enjoy_video {
+  width: 100%;
+  height: 644px;
+  object-fit: cover;
+  border-radius: 40px;
+  @include media-mobile {
+    max-height: 552px;
+  }
+}
+
+.enjoy_content {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  max-width: 530px;
+  @include media-tablet {
+    left: 13%;
+  }
+  @include media-breakpoint {
+    top: 60px;
+    width: 80%;
+  }
+  @include media-mobile {
+    top: 60px;
+    left: 33px;
+    max-width: 320px;
+  }
+}
+
+.enjoy_text {
+  margin: 40px 0;
+  line-height: 24px;
+}
+
+.enjoy_button {
+  gap: 0.5px;
+  justify-content: center;
+  border: 1px solid $color-background-body;
+  &:hover {
+    opacity: 1;
+    .enjoy_button_icon {
+      opacity: 1;
+    }
+  }
+}
+
+.enjoy_button_icon {
+  background-image: url("../assets/images/svg/coffee-cup.svg");
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
