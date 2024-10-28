@@ -29,3 +29,13 @@ const removeSelectedTab = () => {
 const addSelectedTab = (clickedTab) => {
   clickedTab.classList.add('tab_button_active');
 }
+
+const toggleCategories = (clickedTab) => {
+  const className = clickedTab.textContent.toLowerCase().trim();
+
+  document.querySelectorAll('.menu_list').forEach((item) => {
+    item.classList.add('list_hidden');
+  });
+ 
+  document.querySelector(`.${className}`).classList.remove('list_hidden');
+}
