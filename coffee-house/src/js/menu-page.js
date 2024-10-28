@@ -13,6 +13,7 @@ const toggleTabs = () => {
 
       removeSelectedTab();
       addSelectedTab(clickedTab);
+      toggleCategories(clickedTab);
     }
   });
 }
