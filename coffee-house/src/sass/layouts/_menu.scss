@@ -19,6 +19,10 @@
   gap: 40px;
 }
 
+.list_hidden {
+  display: none;
+}
+
 .menu_item {
   border: 1px solid $color-border-light;
   border-radius: 40px;
@@ -71,4 +75,8 @@
   @include media-mobile {
     margin: 40px 41%;
   }
+}
+
+.button-refresh-hidden {
+  display: none;
 }
