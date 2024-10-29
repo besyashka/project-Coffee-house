@@ -675,6 +675,10 @@ h3 {
   }
 }
 
+.button-refresh-hidden {
+  display: none;
+}
+
 .button {
   display: flex;
   align-items: center;
