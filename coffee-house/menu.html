@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./src/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./src/sass/style.css">
+  <title>Coffee House</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header_container">
+      <a href="./index.html" class="logo">
+        <img src="./src/assets/images/svg/logo.svg" alt="logo">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a href="./index.html#favourites" class="header_link link">Favorite coffee</a>
+          </li>
+          <li class="navigation_item">
+            <a href="./index.html#about" class="header_link link">About</a>
+          </li>
+          <li class="navigation_item">
+            <a href="./index.html#mobile-app" class="header_link link">Mobile app</a>
+          </li>
+          <li class="navigation_item">
+            <a href="./index.html#contact-us" class="header_link link">Contact us</a>
+          </li>
+        </ul>
+        <a href="./menu.html" class="link header_link header_link_menu">
+          <span>Menu</span>
+          <img src="./src/assets/images/svg/coffee-cup.svg" alt="coffee-cup">
+        </a>
+      </nav>
+      <div class="header_hamburger hamburger"></div>
+    </div>
+  </header>
+  <main>
+    <section class="menu section">
+      <div class="container">
+        <h1 class="menu_title">Behind each of our cups hides an <span class="text_accent">amazing surprise</span></h1>
+        <div class="tabs_buttons menu_tabs">
+          <button class="tab_button tab_button_active">
+            <span class="tab_button_icon">
+              <img src="./src/assets/images/menu/tab-btn-menu-1.svg" alt="coffee">
+            </span>
+            <span class="text_button">Coffee</span>
+          </button>
+          <button class="tab_button">
+            <span class="tab_button_icon">
+              <img src="./src/assets/images/menu/tab-btn-menu-2.svg" alt="tea">
+            </span>
+            <span class="text_button">Tea</span>
+          </button>
+          <button class="tab_button">
+            <span class="tab_button_icon">
+              <img src="./src/assets/images/menu/tab-btn-menu-3.svg" alt="dessert">
+            </span>
+            <span class="text_button">Dessert</span>
+          </button>
+        </div>
+        <!-- Coffee -->
+        <div class="menu_list coffee">
+          <div class="menu_item">       
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-1.png" alt="Irish coffee">
+            </div>
+            <div class="item_content">
+              <h3>Irish coffee</h3>
+              <p class="text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+              <span class="menu_item_price text_subtitle">$7.00</span>
+            </div>
+          </div>
+          <div class="menu_item"> 
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-2.png" alt="Kahlua coffee">
+            </div>
+            <div class="item_content">
+              <h3>Kahlua coffee</h3>
+              <p class="text">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+              <span class="menu_item_price text_subtitle">$7.00</span>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-3.png" alt="Honey raf">
+            </div>
+            <div class="item_content">
+              <h3>Honey raf</h3>
+              <p class="text">Espresso with frothed milk, cream and aromatic honey</p>
+              <span class="menu_item_price text_subtitle">$5.50</span>
+            </div>
+          </div>
+          <div class="menu_item"> 
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-4.png" alt="Ice cappuccino">
+            </div>
+            <div class="item_content">
+              <h3>Ice cappuccino</h3>
+              <p class="text">Cappuccino with soft thick foam in summer version with ice</p>
+              <span class="menu_item_price text_subtitle">$5.00</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-5.png" alt="Espresso">
+            </div>
+            <div class="item_content">
+              <h3>Espresso</h3>
+              <p class="text">Classic black coffee</p>
+              <span class="menu_item_price text_subtitle">$4.50</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">                                                              
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-6.png" alt="Latte">
+            </div>
+            <div class="item_content">
+              <h3>Latte</h3>
+              <p class="text">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+              <span class="menu_item_price text_subtitle">$5.50</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-7.png" alt="Latte macchiato">
+            </div>
+            <div class="item_content">
+              <h3>Latte macchiato</h3>
+              <p class="text">Espresso with frothed milk and chocolate</p>
+              <span class="menu_item_price text_subtitle">$5.50</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/coffee-8.png" alt="Coffee with cognac">
+            </div>
+            <div class="item_content">
+              <h3>Coffee with cognac</h3>
+              <p class="text">Fragrant black coffee with cognac and whipped cream</p>
+              <span class="menu_item_price text_subtitle">$6.50</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tea -->
+        <div class="menu_list tea list_hidden">
+          <div class="menu_item">       
+            <div class="item_img">
+              <img src="./src/assets/images/menu/tea-1.png" alt="Moroccan">
+            </div>
+            <div class="item_content">
+              <h3>Moroccan</h3>
+              <p class="text">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+              <span class="menu_item_price text_subtitle">$4.50</span>
+            </div>
+          </div>
+          <div class="menu_item">       
+            <div class="item_img">
+              <img src="./src/assets/images/menu/tea-2.png" alt="Ginger">
+            </div>
+            <div class="item_content">
+              <h3>Ginger</h3>
+              <p class="text">Original black tea with fresh ginger, lemon and honey</p>
+              <span class="menu_item_price text_subtitle">$5.00</span>
+            </div>
+          </div>                                  
+          <div class="menu_item">       
+            <div class="item_img">
+              <img src="./src/assets/images/menu/tea-3.png" alt="Cranberry">
+            </div>
+            <div class="item_content">
+              <h3>Cranberry</h3>
+              <p class="text">Invigorating black tea with cranberry and honey</p>
+              <span class="menu_item_price text_subtitle">$5.00</span>
+            </div>
+          </div>
+          <div class="menu_item">       
+            <div class="item_img">
+              <img src="./src/assets/images/menu/tea-4.png" alt="Sea buckthorn">
+            </div>
+            <div class="item_content">
+              <h3>Sea buckthorn</h3>
+              <p class="text">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+              <span class="menu_item_price text_subtitle">$5.50</span>
+            </div>
+          </div>
+        </div>
+        <!-- dessert -->
+        <div class="menu_list dessert list_hidden">
+          <div class="menu_item">       
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-1.png" alt="Marble cheesecake">
+            </div>
+            <div class="item_content">
+              <h3>Marble cheesecake</h3>
+              <p class="text">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+              <span class="menu_item_price text_subtitle">$3.50</span>
+            </div>
+          </div>
+          <div class="menu_item"> 
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-2.png" alt="Red velvet">
+            </div>
+            <div class="item_content">
+              <h3>Red velvet</h3>
+              <p class="text">Layer cake with cream cheese frosting</p>
+              <span class="menu_item_price text_subtitle">$4.00</span>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-3.png" alt="Cheesecakes">
+            </div>
+            <div class="item_content">
+              <h3>Cheesecakes</h3>
+              <p class="text">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+              <span class="menu_item_price text_subtitle">$4.50</span>
+            </div>
+          </div>
+          <div class="menu_item"> 
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-4.png" alt="Creme brulee">
+            </div>
+            <div class="item_content">
+              <h3>Creme brulee</h3>
+              <p class="text">Delicate creamy dessert in a caramel basket with wild berries</p>
+              <span class="menu_item_price text_subtitle">$4.00</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-5.png" alt="Pancakes">
+            </div>
+            <div class="item_content">
+              <h3>Pancakes</h3>
+              <p class="text">Tender pancakes with strawberry jam and fresh strawberries</p>
+              <span class="menu_item_price text_subtitle">$4.50</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">                                                              
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-6.png" alt="Honey cake">
+            </div>
+            <div class="item_content">
+              <h3>Honey cake</h3>
+              <p class="text">Classic honey cake with delicate custard</p>
+              <span class="menu_item_price text_subtitle">$4.50</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">
+            <div class="item_img">
+              <img src="./src/assets/images/menu//dessert-7.png" alt="Chocolate cake">
+            </div>
+            <div class="item_content">
+              <h3>Chocolate cake</h3>
+              <p class="text">Cake with hot chocolate filling and nuts with dried apricots</p>
+              <span class="menu_item_price text_subtitle">$5.50</span>
+            </div>
+          </div>
+          <div class="menu_item menu_item_hidden">
+            <div class="item_img">
+              <img src="./src/assets/images/menu/dessert-8.png" alt="Black forest">
+            </div>
+            <div class="item_content">
+              <h3>Black forest</h3>
+              <p class="text">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+              <span class="menu_item_price text_subtitle">$6.50</span>
+            </div>
+          </div>
+        </div>
+        <button class="button-refresh">
+          <img src="./src/assets/images/svg/button-refresh.svg" alt="button refresh">
+       </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact-us">
+    <div class="container">
+      <div class="footer_container">
+        <div>
+          <h2 class="footer_title text_light">Sip, Savor, Smile. <span class="text_accent">It's coffee time!</span></h2>
+          <div class="footer_socials">
+            <a href="https://twitter.com/" class="social_link link" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/" class="social_link link" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"/>
+                <path d="M17.5 6.51L17.51 6.49889" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+            </a>
+            <a href="https://facebook.com/" class="social_link link" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer_contacts">
+          <h3 class="text_light">Contact us</h3>
+          <ul class="footer_list">
+            <li class="footer_item">
+              <a class="link contact_link text_light" href="https://www.google.com/maps/dir/8558+Green+Rd,+Lakeview,+MI+48850,+%D0%A1%D0%A8%D0%90//@43.3333024,-85.2551975,20z/data=!4m8!4m7!1m5!1m1!1s0x881894c3cff73ed7:0x6b7a7f95039dd76e!2m2!1d-85.2551117!2d43.3332195!1m0?hl=ru&entry=ttu" target="_blank">
+                <img src="./src/assets/images/svg/footer-pin-alt.svg" alt="pin">
+                <span>8558 Green Rd.,  LA</span>
+              </a>
+            </li>
+            <li class="footer_item">
+              <a href="tel:+16035550123" class="link contact_link text_light">
+                <img src="./src/assets/images/svg/footer-phone.svg" alt="phone">
+                <span>+1 (603) 555-0123</span>
+              </a>
+            </li>
+            <li class="footer_item">
+              <img src="./src/assets/images/svg/footer-clock.svg" alt="clock">
+              <span class="text_light">Mon-Sat: 9:00 AM – 23:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./src/js/menu-page.js" type="module"></script>
+</body>
+</html>

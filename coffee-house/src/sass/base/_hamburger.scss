@@ -1,0 +1,42 @@
+%hamburger-line {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 1.5px;
+  background: $color-border-dark;
+  border-radius: 1.5px;
+  transition: 0.5s;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 1px solid $color-border-dark;
+  border-radius: 100%;
+  @include media-tablet {
+    display: block;
+  }
+  &::before {
+    @extend %hamburger-line;
+    top: 24px;
+    left: 12px;
+  }
+  &::after {
+    @extend %hamburger-line;
+    top: 16px;
+    left: 12px;
+  }
+}
+
+.hamburger_active{
+  &::before {
+    transform: translate(0px, -4px) rotate(-45deg);
+  }
+  
+  &::after {
+    transform: translate(0px, 4px) rotate(45deg);
+  }
+}
