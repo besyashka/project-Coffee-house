@@ -1,2 +1,12 @@
-# My-Projects
-https://besyashka.github.io/project-Coffee-house/coffee-house/
+# Coffee-house
+### Deploy: [`ссылка на готовую работу`](https://besyashka.github.io/project-Coffee-house/coffee-house/) ###
+
+![text](https://github.com/besyashka/besyashka/raw/main/gifs/coffee-house-ezgif.com-resize.gif)
+---
+
+**Кофейня** - это сайт, который предоставляет информацию о кафе и позволяет ознакомиться с его меню. Сайт разработан с адаптивным дизайном и состоит из двух страниц, согласно макету в Figma. (в разработке)
+- верстка страницы валидная
+- реализация burger menu на обеих страницах
+- слайдер бесконечен
+- элементы слайдера автоматически прокручиваются влево с заданным интервалом времени по умолчанию
+-на menu странице при переключении категорий отображаются товары выбранной категории
